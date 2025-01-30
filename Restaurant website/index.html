@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savoreat</title>
+    <meta name="title" content="Savoreat Restaurant">
+    <meta name="describition" content="savoreat Restaurant website using HTML,CSS and JavaScript">
+    <!-- CUSTOM CSS LINK -->
+     <link rel="stylesheet" href="./assets/css/styles.css">
+    <!-- CUSTOM JS LINK -->
+     <script src="./assets/js/main.js" defer></script>
+    <!-- Favicon -->
+     <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+    <!-- PRELOAD -->
+     <link rel="preload" as="image" href="./assets/images/hero img.png">
+    <!-- REMIX ICON -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <!-- SWIPER JS css LINK -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+</head>
+<body id="top">
+    
+    <!-- PRELOAD -->
+     <div class="preload">
+        <div class="circle"></div>
+     </div>
+
+     <div class="topbar">
+        <div class="container">
+            <address>
+                <i class="ri-map-pin-2-fill"></i> 1405 Broadway Park, Manhattan
+            </address>
+            <div class="open-hours">
+                <i class="ri-time-line"></i> Daily 7:00Am - 10:00pm
+            </div>
+            <div class="bar-contact-info">
+                <a href="mailto:info@exmple.com"><i class="ri-mail-fill"></i> info@exmple.com</a>
+                <a href="tel:+123553490877"><i class="ri-phone-fill"></i> +123553490877</a>
+            </div>
+        </div>
+     </div>
+
+
+     <!-- #HEADER -->
+      <header class="header">
+        <div class="container">
+            <a href="./index.html" class="logo">
+                <img src="./assets/images/logo.png" alt="logo img" width="196" height="50">
+            </a>
+
+            <nav class="navbar">
+                <button class="close-menu" title="close menu" aria-label="close menu" id="nav-toggle">
+                    <img src="./assets/images/fork.png" alt="close menu" width="30" height="30">
+                </button>
+
+                <a href="#" class="logo">
+                    <img src="./assets/images/logo.png" alt="logo img" width="160" height="50">
+                </a>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link active" id="nav-toggle">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./menu.html" class="nav-link" id="nav-toggle">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./about.html" class="nav-link" id="nav-toggle">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./reservation.html" class="nav-link" id="nav-toggle">Reservation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./contact.html" class="nav-link" id="nav-toggle">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="info sm-none">
+                    <address class="location">
+                        <span> <i class="ri-map-pin-fill"></i> 1405 Broadway Park, Manhattan</span>
+                    </address>
+                    <div class="open-hours">
+                        <span><i class="ri-time-line"></i> Daily 7:00Am - 10:00pm</span>
+                    </div>
+
+                    <div class="contact-info">
+                        <a href="mailto:info@exmple.com"><i class="ri-mail-line"></i> info@exmple.com</a>
+                        <a href="tel:+123553490877"><i class="ri-phone-fill"></i> +123553490877</a>
+                    </div>
+                </div>
+            </nav>
+
+            <button class="open-menu" title="open menu" aria-label="open menu" id="nav-toggle">
+                <img src="./assets/images/menu.png" alt="open menu" width="30" height="30">
+            </button>
+            <div class="overlay" id="nav-toggle"></div>
+        </div>
+      </header>
+
+
+      <main>
+        <article>
+
+
+            <!-- #HERO -->
+             <section class="hero" id="">
+                <div class="hero-content">
+                    <div class="container">
+                            <p class="section-subtitle text-center reveal">Book your table today</p>
+                            <h1 class="headline-1 section-title text-center reveal">Experience Flavors Like Never Before</h1>
+                            <p class="section-text text-center reveal">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                            <div class="btn-wrapper">
+                                <button class="btn btn-secondary reveal">
+                                    <a href="#">View Menu</a>
+                                </button>
+                                <button class="btn btn-primary reveal">
+                                    <a href="#">Book a table</a>
+                                </button>
+                            </div>
+                    </div>
+                </div>
+             </section>
+
+
+            <!-- #SERVICES -->
+             <section class="services section">
+                <div class="container">
+                    <p class="section-subtitle text-center">Why Choose Us</p>
+                    <h2 class="section-title text-center">Behind the Scenes</h2>
+                    
+
+                    <div class="grid-list card-wrapper">
+                        <div class="card hover:shine">
+                            <div class="card-image">
+                                <img src="./assets/images/card-img-1.png" alt="Fresh Products" width="80" height="80" loading="lazy">
+                            </div>
+                            <div class="card-content">
+                                <h2 class="card-title text-center">Fresh Products</h2>
+                                <p class="card-text text-center">Locally sourced ingredients for peak flavor</p>
+                            </div>
+                        </div>
+                        <div class="card hover:shine">
+                            <div class="card-image">
+                                <img src="./assets/images/card-img-2.png" alt="Best bar" width="80" height="80" loading="lazy">
+                            </div>
+                            <div class="card-content">
+                                <h2 class="card-title text-center">Best bar</h2>
+                                <p class="card-text text-center">Handcrafted cocktails and an extensive wine list</p>
+                            </div>
+                        </div>
+                        <div class="card hover:shine">
+                            <div class="card-image">
+                                <img src="./assets/images/card-img-3.png" alt="Skilled Chefs" width="80" height="80" loading="lazy">
+                            </div>
+                            <div class="card-content">
+                                <h2 class="card-title text-center">Skilled Chefs</h2>
+                                <p class="card-text text-center">Culinary artistry with passion and precision</p>
+                            </div>
+                        </div>
+                        <div class="card hover:shine">
+                            <div class="card-image">
+                                <img src="./assets/images/card-img-4.png" alt="Evemt & party" width="80" height="80" loading="lazy">
+                            </div>
+                            <div class="card-content">
+                                <h2 class="card-title text-center">Evemt & party</h2>
+                                <p class="card-text text-center">Perfect venue for celebrations, big or small</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </section>
+
+            <!-- #ABOUT -->
+             <section class="about section">
+                <div class="container">
+                    <div class="about-content">
+                        <p class="section-subtitle">About us</p>
+                        <h2 class="section-title">our Story</h2>
+                        <p class="section-text">
+                            Since 1990, our restaurant has been the preferred choice for people seeking a memorable dining experience. From intimate dinners to grand celebrations, we’ve been honored to host countless special events—and many more to come
+                        </p>
+                        <p class="about-text">
+                            Share your desires with us, and we’ll create the perfect meal, just for you, in the moment.
+                        </p>
+                        <button class="btn btn-primary">Read More</button>
+                    </div>
+
+                    <div class="about-banner">
+                        <img src="./assets/images/about banner.png" alt="about banner" width="430" height="336" loading="lazy" class="img-cover col-t">
+                        <img src="./assets/images/about banner bottom.png" alt="about banner" loading="lazy" width="266" height="224" class="img-cover col-b">
+                    </div>
+                </div>
+             </section>
+
+            <!-- #MENU -->
+             <section class="menu section">
+                <div class="container">
+                    <p class="section-subtitle text-center">Special Selection</p>
+                    <h2 class="section-title text-center">Chef's Recommendations</h2>
+                    
+
+                   <div class="card-wrapper">
+                     <div class="card">
+                        <div class="card-img">
+                            <img src="./assets/images/dish-1.jpg" alt="Grilled Filet" width="150" height="150" loading="lazy" class="img-cover">
+                        </div>
+
+                        <div class="card-content">
+                            <div class="title-wrapper">
+                                <h4 class="card-title">Grilled Filet</h4>
+                                <div class="line"></div>
+                                <p class="price">$55</p>
+                            </div>
+                            <p class="card-text">
+                                Filet mignon (beef tenderloin), red wine reduction (red wine, shallots, garlic, thyme, bay leaf), butter
+                            </p>
+                        </div>
+                     </div>
+                     <div class="card">
+                        <div class="card-img">
+                            <img src="./assets/images/dish-2.jpg" alt="Grilled Filet" width="150" height="150" loading="lazy" class="img-cover">
+                        </div>
+
+                        <div class="card-content">
+                            <div class="title-wrapper">
+                                <h4 class="card-title">Seared Foie Gras</h4>
+                                <div class="line"></div>
+                                <p class="price">$30</p>
+                            </div>
+                            <p class="card-text">
+                                Foie gras, fig jam, balsamic glaze
+                            </p>
+                        </div>
+                     </div>
+                     <div class="card">
+                        <div class="card-img">
+                            <img src="./assets/images/dish-3.jpg" alt="Baked Alaska" width="150" height="150" loading="lazy" class="img-cover">
+                        </div>
+
+                        <div class="card-content">
+                            <div class="title-wrapper">
+                                <h4 class="card-title">Baked Alaska</h4>
+                                <div class="line"></div>
+                                <p class="price">$15</p>
+                            </div>
+                            <p class="card-text">
+                                Vanilla bean ice cream, berry compote (berries, sugar, lemon juice), meringue, whipped cream, almonds
+                            </p>
+                        </div>
+                     </div>
+                     <div class="card">
+                        <div class="card-img">
+                            <img src="./assets/images/dish-4.jpg" alt="Chocolate Lava Cake" width="150" height="150" loading="lazy" class="img-cover">
+                        </div>
+
+                        <div class="card-content">
+                            <div class="title-wrapper">
+                                <h4 class="card-title">Chocolate Lava Cake</h4>
+                                <div class="line"></div>
+                                <p class="price">$10</p>
+                            </div>
+                            <p class="card-text">
+                                Chocolate, dark chocolate, eggs, butter, sugar, flour, vanilla extract, salt, salted caramel sauce
+                            </p>
+                        </div>
+                     </div>
+                     <div class="card">
+                        <div class="card-img">
+                            <img src="./assets/images/dish-5.jpg" alt="Pan-Seared Scallops" width="150" height="150" loading="lazy" class="img-cover">
+                        </div>
+
+                        <div class="card-content">
+                            <div class="title-wrapper">
+                                <h4 class="card-title">Pan-Seared Scallops</h4>
+                                <div class="line"></div>
+                                <p class="price">$35</p>
+                            </div>
+                            <p class="card-text">
+                                Scallops, truffle risotto (rice, truffle oil, butter, Parmesan), pancetta, spinach, shallots, garlic, olive oil
+                            </p>
+                        </div>
+                     </div>
+                     <div class="card">
+                        <div class="card-img">
+                            <img src="./assets/images/dish-6.jpg" alt="Lobster Ravioli" width="150" height="150" loading="lazy" class="img-cover">
+                        </div>
+
+                        <div class="card-content">
+                            <div class="title-wrapper">
+                                <h4 class="card-title">Lobster Ravioli</h4>
+                                <div class="line"></div>
+                                <p class="price">$25</p>
+                            </div>
+                            <p class="card-text">
+                                Lobster ravioli (pasta, lobster, ricotta), butter, lemon juice, white wine, shallots, garlic, parsley, parmesan
+                            </p>
+                        </div>
+                     </div>
+                   </div>
+
+                   <button class="btn btn-primary">
+                        <a href="#">View All Menu</a>
+                   </button>
+                </div>
+             </section>
+
+            <!-- #TESTIMONIALS -->
+             <section class="testimonials section" style="background: url(./assets/images/testimonials\ banner.png) center/cover no-repeat;">
+                <div class="container swiper">
+                    <div class="quotetion-mark">
+                        <img src="./assets/images/double-quotes-r.png" alt="quotetion mark" width="30" height="30">
+                    </div>
+                    <ul class="testi-list swiper-wrapper">
+                        <li class="swiper-slide">
+                            <p class="text text-center">
+                                Visiting Savoreat Restaurant evokes childhood memories of my mother's delicious home cooking
+                            </p>
+                            <div class="auther-img">
+                                <img src="./assets/images/Christopher Lee Evans.jpg" alt="" width="120" height="120" class="img-cover">
+                            </div>
+                            <p class="auther-name text-center">Christopher Lee Evans</p>
+                        </li>
+                        <li class="swiper-slide">
+                            <p class="text text-center">
+                                Dining at savoreat Restaurant was an unforgettable experience. The food was absolutely mouthwatering, and the ambiance made it feel like we were dining in a cozy, intimate setting. I can’t recommend it enough! The staff were attentive and friendly, which made the whole experience even better.
+                            </p>
+                            <div class="auther-img">
+                                <img src="./assets/images/Christopher Lee Evans.jpg" alt="" width="120" height="120" class="img-cover">
+                            </div>
+                            <p class="auther-name text-center">Emma Garcia</p>
+                        </li>
+                        <li class="swiper-slide">
+                            <p class="text text-center">
+                                I’ve been coming to savoreat Restaurant for years, and it never disappoints. Whether it's a casual dinner with friends or a special occasion, the quality of the food and the service is always top-notch. Every dish feels like a celebration!
+                            </p>
+                            <div class="auther-img">
+                                <img src="./assets/images/Christopher Lee Evans.jpg" alt="" width="120" height="120" class="img-cover">
+                            </div>
+                            <p class="auther-name text-center">James Patterson</p>
+                        </li>
+                        <li class="swiper-slide">
+                            <p class="text text-center">
+                                From the appetizers to the desserts, everything at savoreat Restaurant is a delight. I’m always blown away by how flavorful each dish is. The chefs truly know how to combine ingredients in unique and delicious ways. Can’t wait for my next visit
+                            </p>
+                            <div class="auther-img">
+                                <img src="./assets/images/Christopher Lee Evans.jpg" alt="" width="120" height="120" class="img-cover">
+                            </div>
+                            <p class="auther-name text-center">Ava Mitchell</p>
+                        </li>
+                    </ul>
+                    <div class="swiper-pagination"></div>
+                    <div class="prev-btn swiper-button-prev"></div>
+                    <div class="next-btn swiper-button-next"></div>
+            </div>
+             </section>
+
+            <!-- #GALLARY -->
+             <section class="gallary section">
+                <div class="container">
+                    <p class="section-subtitle text-center">Gallery</p>
+                    <h2 class="section-title text-center">Best Moments at Savoreat</h2>
+
+                    <div class="grid-list">
+                        <div class="img-holder">
+                            <img src="./assets/images/gallary-1.jpg" alt="gallary img" width="640" height="427" class="img-cover">
+                            <a href="#" class="instagram-link">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                        </div>
+                        <div class="img-holder">
+                            <img src="./assets/images/gallary-2.jpg" alt="gallary img" width="640" height="427" class="img-cover">
+                            <a href="#" class="instagram-link">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                        </div>
+                        <div class="img-holder">
+                            <img src="./assets/images/gallary-3.jpg" alt="gallary img" width="640" height="427" class="img-cover">
+                            <a href="#" class="instagram-link">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                        </div>
+                        <div class="img-holder">
+                            <img src="./assets/images/gallary-4.jpg" alt="gallary img" width="640" height="427" class="img-cover">
+                            <a href="#" class="instagram-link">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                        </div>
+                        <div class="img-holder">
+                            <img src="./assets/images/gallary-5.jpg" alt="gallary img" width="640" height="427" class="img-cover">
+                            <a href="#" class="instagram-link">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                        </div>
+                        <div class="img-holder">
+                            <img src="./assets/images/gallary-6.jpg" alt="gallary img" width="640" height="427" class="img-cover">
+                            <a href="#" class="instagram-link">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                        </div>
+                        <div class="img-holder">
+                            <img src="./assets/images/gallary-7.jpg" alt="gallary img" width="640" height="427" class="img-cover">
+                            <a href="#" class="instagram-link">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                        </div>
+                        <div class="img-holder">
+                            <img src="./assets/images/gallary-8.jpg" alt="gallary img" width="640" height="427" class="img-cover">
+                            <a href="#" class="instagram-link">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+             </section>
+
+             <!-- #CTA -->
+              <section class="cta section" style="background: url(./assets/images/cta\ banner.png) center/cover no-repeat;">
+                <div class="container">
+                    <h2 class="section-title text-center">Reserve A Table Now</h2>
+                    <button class="btn btn-primary">Make A reservation</button>
+                </div>
+              </section>
+            </article>
+        </main>
+            <!-- #FOOTER -->
+
+            <footer class="footer">
+                <div class="container">
+                <div class="footer-top">
+                    <div class="footer-brand">
+                        <a href="#" class="logo">
+                            <img src="./assets/images/logo.png" alt="logo">
+                        </a>
+                        <div class="brand-content">
+                            <address class="">
+                                <i class="ri-map-pin-fill"></i> 1405 Broadway Park, Manhattan
+                            </address>
+                            <p class="open-hours">
+                                <i class="ri-time-line"></i> Open: 7:00 Am - 16:00 PM
+                            </p>
+                            <a href="tel:+23553490877" class="">
+                                <i class="ri-phone-fill"></i> +123553490877</a>
+                        </div>
+
+                        <div class="social-list">
+                            <a href="#"><i class="ri-instagram-line"></i></a>
+                            <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+                            <a href="#"><i class="ri-twitter-fill"></i></a>
+                            <a href="#"><i class="ri-linkedin-fill"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="footer-list">
+                        <p class="list-title">Use Full links</p>
+
+                        <ul class="list">
+                            <li class="item">
+                                <a href="#" class="link">Menus</a>
+                            </li>
+                            <li class="item">
+                                <a href="#" class="link">Contact</a>
+                            </li>
+                            <li class="item">
+                                <a href="#" class="link">F.A.Q</a>
+                            </li>
+                            <li class="item">
+                                <a href="#" class="link">Our Kitchen</a>
+                            </li>
+                            <li class="item">
+                                <a href="#" class="link">Our Team</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-list">
+                        <h2 class="list-title section-title">Get News & offers</h2>
+
+                        <p class="text section-text">Subscribe us & get 50% off.</p>
+
+                        <div class="input-wrapper">
+                            <input type="email" autocomplete="off" class="input-field" placeholder="Your email">
+
+                            <button class="sub-btn" title="subscribe to our news letter">
+                                <a href="#">Subscribe</a> 
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="copyright-info">
+                    <p class="text">&copy; <span class="date"></span>  savoreat.Allrights Reserved</p>
+                </div>
+                </div>
+            </footer>
+
+            <!-- #back to top -->
+             <a href="#top" class="back-top-btn" aria-label="back to top btn">
+                <i class="ri-arrow-up-line"></i>
+             </a>
+
+       
+             <!-- SWIPER JS LINK -->
+             <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+</html>
