@@ -15,33 +15,17 @@ window.addEventListener('load',function(){
 const navbar = document.querySelector('.navbar')
 const navToggles = document.querySelectorAll('#nav-toggle')
 const overlay = document.querySelector('.overlay')
-const navLinks = document.querySelectorAll('.nav-link')
+
 
 
 const toggleMenu = function(){
-    if (window.innerWidth <= 991) {
         navbar.classList.toggle('active');
         overlay.classList.toggle('active');
-    }
 }
 navToggles.forEach(function(navToggle){
     navToggle.addEventListener('click',toggleMenu)
 })
 
-navLinks.forEach(link => {
-    link.addEventListener('click', function() {
-        // Only close the menu on mobile
-        if (window.innerWidth <= 991) {
-            navLinks.forEach(item => item.classList.remove('active'));
-            this.classList.add('active');
-            navbar.classList.remove('active');
-            overlay.classList.remove('active');
-        } else {
-            navLinks.forEach(item => item.classList.remove('active'));
-            this.classList.add('active');
-        }
-    });
-});
 
 /* HEADER ONSCROLL ANIMATION & BACK TO TOP BTN*/
 const header = document.querySelector('.header')
@@ -68,21 +52,6 @@ window.addEventListener('scroll',function(){
     }
 })
 
-
-//BUTTON MOUSE OVER
-const btnPrimarys = document.querySelectorAll('.btn-primary')
-
-btnPrimarys.forEach(function(btn){
-    btn.addEventListener('mouseover',function(e){
-        const x = (e.pageX - btn.offsetLeft);
-        const y = (e.pageY - btn.offsetTop);
-
-        btn.style.setProperty("--xPos",x + "px")
-        btn.style.setProperty("--yPos",y + "px")
-    })
-})
-
-
 //SWIPER JS
  new Swiper('.swiper', {
     loop: true,
@@ -108,27 +77,5 @@ btnPrimarys.forEach(function(btn){
 //footer custom date
 const date = document.querySelector('.date')
 date.innerHTML = new Date().getFullYear();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 

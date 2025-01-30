@@ -8,8 +8,6 @@
     <meta name="describition" content="savoreat Restaurant website using HTML,CSS and JavaScript">
     <!-- CUSTOM CSS LINK -->
      <link rel="stylesheet" href="./assets/css/styles.css">
-    <!-- CUSTOM JS LINK -->
-     <script src="./assets/js/main.js" defer></script>
     <!-- Favicon -->
      <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
     <!-- PRELOAD -->
@@ -65,7 +63,7 @@
                 </a>
                 <ul class="nav-list">
                     <li class="nav-item">
-                        <a href="./index.html" class="nav-link active" id="nav-toggle">Home</a>
+                        <a href="./index.html" class="nav-link" id="nav-toggle">Home</a>
                     </li>
                     <li class="nav-item">
                         <a href="./menu.html" class="nav-link" id="nav-toggle">Menu</a>
@@ -109,7 +107,7 @@
 
 
             <!-- #HERO -->
-             <section class="hero" id="">
+             <section class="hero" id="" style="background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(./assets/images/hero\ img.png) center/cover no-repeat">
                 <div class="hero-content">
                     <div class="container">
                             <p class="section-subtitle text-center reveal">Book your table today</p>
@@ -119,10 +117,10 @@
                             </p>
                             <div class="btn-wrapper">
                                 <button class="btn btn-secondary reveal">
-                                    <a href="#">View Menu</a>
+                                    <a href="./menu.html">View Menu</a>
                                 </button>
                                 <button class="btn btn-primary reveal">
-                                    <a href="#">Book a table</a>
+                                    <a href="./reservation.html">Book a table</a>
                                 </button>
                             </div>
                     </div>
@@ -307,7 +305,7 @@
                    </div>
 
                    <button class="btn btn-primary">
-                        <a href="#">View All Menu</a>
+                        <a href="./menu.html">View All Menu</a>
                    </button>
                 </div>
              </section>
@@ -509,5 +507,8 @@
        
              <!-- SWIPER JS LINK -->
              <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+            <!-- CUSTOM JS LINK -->
+            <script src="./assets/js/main.js"></script>
 </body>
 </html>
