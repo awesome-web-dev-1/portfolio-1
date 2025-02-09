@@ -283,6 +283,9 @@ body.nav-active{ overflow: hidden;}
 .nav-link.active{
     color: var(--primary-clr) !important;
 }
+.nav-item .active{
+    color: var(--primary-clr);
+}
 .navbar .info{
     display: flex;
     flex-direction: column;
@@ -721,6 +724,7 @@ body.nav-active{ overflow: hidden;}
 @media (min-width:992px){
     .container{
         max-width: 960px;
+        padding-inline: 3rem;
     }
     body {
         font-size: 1.5rem; /* 15px */
@@ -734,7 +738,7 @@ body.nav-active{ overflow: hidden;}
         top: 0;
         left: 0;
         width: 100%;
-        border-bottom:1px solid var(--primary-clr) ;
+        border-bottom:1px solid rgba(255,255,255,0.5) ;
         padding-block: 0.7rem;
         z-index: 5;
     }
